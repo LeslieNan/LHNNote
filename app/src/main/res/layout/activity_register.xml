@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/loginbg"
+    tools:context="com.lhn.yourstory.lhnnote.RegisterActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/viewMargin"
+        android:text="注册账号"
+        android:textSize="30sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="150dp" />
+
+    <EditText
+        android:id="@+id/et_register_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/viewMargin"
+        android:layout_marginEnd="@dimen/toolbarMargin"
+        android:layout_marginStart="@dimen/toolbarMargin"
+        android:hint="邮箱："
+        android:paddingEnd="@dimen/viewMargin"
+        android:paddingStart="@dimen/viewMargin" />
+    <EditText
+        android:id="@+id/et_register_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/viewMargin"
+        android:layout_marginEnd="@dimen/toolbarMargin"
+        android:layout_marginStart="@dimen/toolbarMargin"
+        android:hint="昵称："
+        android:paddingEnd="@dimen/viewMargin"
+        android:paddingStart="@dimen/viewMargin" />
+    <EditText
+        android:id="@+id/et_register_psw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/viewMargin"
+        android:layout_marginEnd="@dimen/toolbarMargin"
+        android:layout_marginStart="@dimen/toolbarMargin"
+        android:hint="密码："
+        android:paddingEnd="@dimen/viewMargin"
+        android:paddingStart="@dimen/viewMargin" />
+
+    <EditText
+        android:id="@+id/et_register_again"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/toolbarMargin"
+        android:layout_marginStart="@dimen/toolbarMargin"
+        android:hint="确认密码:"
+        android:paddingEnd="@dimen/viewMargin"
+        android:paddingStart="@dimen/viewMargin" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="@dimen/toolbarMargin"
+        android:layout_marginStart="@dimen/toolbarMargin"
+        android:layout_marginTop="@dimen/viewMargin"
+        android:textSize="@dimen/titleTextWeight"
+        android:background="@drawable/register"
+        android:layout_gravity="center_horizontal"/>
+
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lhn.yourstory.lhnnote.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolBarHeight"
+        app:contentInsetStart="@dimen/toolbarMargin"
+        app:contentInsetEnd="@dimen/toolbarMargin"
+        android:background="@color/colorPrimary">
+        <Button
+            android:id="@+id/btn_head_toUser"
+            android:layout_width="@dimen/buttonHeight"
+            android:layout_height="@dimen/buttonHeight"
+            android:background="@drawable/user"
+            android:layout_gravity="start|center_vertical"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:layout_gravity="center"
+            android:textSize="@dimen/titleTextWeight"
+            android:textStyle="bold"
+            android:textColor="@color/WHITE"/>
+        <Button
+            android:id="@+id/btn_head_style"
+            android:layout_width="@dimen/buttonHeight"
+            android:layout_height="@dimen/buttonHeight"
+            android:background="@drawable/liststyle_patch"
+            android:layout_gravity="end|center_vertical"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_head"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:paddingStart="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_addNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="@dimen/toolbarMargin"
+        android:layout_marginEnd="@dimen/toolbarMargin"
+        app:backgroundTint="@color/colorPrimary"
+        android:src="@drawable/add"
+        />
+
+
+
+
+</android.support.constraint.ConstraintLayout>

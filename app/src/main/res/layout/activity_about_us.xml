@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lhn.yourstory.lhnnote.AboutUsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolBarHeight" />
+    <ImageView
+        android:layout_width="@dimen/headImgHeight"
+        android:layout_height="@dimen/headImgHeight"
+        android:src="@mipmap/icon"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/viewMargin"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/app_name"
+        android:textSize="@dimen/titleTextWeight"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/toolbarMargin"
+        android:paddingEnd="@dimen/toolbarMargin"
+        android:layout_marginTop="@dimen/toolbarMargin"
+        android:text="@string/app_function"
+        android:textSize="@dimen/textWeight"
+        android:background="@color/WHITE"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/toolbarMargin"
+        android:paddingEnd="@dimen/toolbarMargin"
+        android:gravity="end"
+        android:text="@string/my_information" />
+</LinearLayout>

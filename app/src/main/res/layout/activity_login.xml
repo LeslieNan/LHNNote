@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbg"
+    tools:context="com.lhn.yourstory.lhnnote.LoginActivity">
+
+    <View
+        android:layout_width="110dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="@dimen/toolbarMargin"
+        app:layout_constraintBottom_toTopOf="@id/et_login_id"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/et_login_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/viewMargin"
+        android:layout_marginEnd="@dimen/toolbarMargin"
+        android:layout_marginStart="@dimen/toolbarMargin"
+        android:hint="账号："
+        android:inputType="textEmailAddress"
+        android:paddingEnd="@dimen/viewMargin"
+        android:paddingStart="@dimen/viewMargin"
+        app:layout_constraintBottom_toTopOf="@id/et_login_psw"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/et_login_psw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/viewMargin"
+        android:layout_marginEnd="@dimen/toolbarMargin"
+        android:layout_marginStart="@dimen/toolbarMargin"
+        android:hint="密码："
+        android:inputType="textPassword"
+        android:paddingEnd="@dimen/viewMargin"
+        android:paddingStart="@dimen/viewMargin"
+        app:layout_constraintBottom_toTopOf="@id/btn_login_login" />
+
+    <Button
+        android:id="@+id/btn_login_login"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="@dimen/toolbarMargin"
+        android:layout_marginStart="@dimen/toolbarMargin"
+        android:textSize="@dimen/titleTextWeight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/login"/>
+
+    <TextView
+        android:id="@+id/tv_login_forget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/toolbarMargin"
+        android:layout_marginTop="@dimen/viewMargin"
+        android:clickable="true"
+        android:text="忘记密码？"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_login_login" />
+
+    <TextView
+        android:id="@+id/tv_login_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/toolbarMargin"
+        android:layout_marginTop="@dimen/viewMargin"
+        android:clickable="true"
+        android:text="注册新用户"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_login_login" />
+</android.support.constraint.ConstraintLayout>

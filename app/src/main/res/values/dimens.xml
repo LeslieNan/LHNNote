@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="toolBarHeight">40dp</dimen>
+    <dimen name="titleTextWeight">20sp</dimen>
+    <dimen name="headImgHeight">90dp</dimen>
+    <dimen name="toolbarMargin">20dp</dimen>
+    <dimen name="viewMargin">10dp</dimen>
+    <dimen name="textWeight">15sp</dimen>
+    <dimen name="buttonHeight">30dp</dimen>
+</resources>
